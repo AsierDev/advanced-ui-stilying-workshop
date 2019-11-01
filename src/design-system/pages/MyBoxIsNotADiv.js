@@ -22,7 +22,7 @@ const Page = () => (
       </Link>
     </Text>
     <Text>
-      <Box>I should be a button</Box>
+      <Box as='button' padding={4} shadows={'bold'}>I should be a button</Box>
     </Text>
   </div>
 );

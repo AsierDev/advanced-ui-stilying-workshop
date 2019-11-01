@@ -3,13 +3,17 @@ import styled from "styled-components";
 // import { fontFamily } from "styled-system";
 import Typography, { Text } from "../components/data-display/Typography";
 
-const fontFamily = ({ theme, fontFamily }) => {
-  return `font-family: ${`return here a font from the theme.fonts based on the font argument`};`;
+const fontFamily = ({ theme, fontFamily = 'sansSerif' }) => {
+  return `font-family: ${theme.fonts[fontFamily]};`;
 };
 
 const Box = styled.div`
   ${fontFamily}
 `;
+
+Box.defaultProps = {
+  'font-family': 'sansSerif'
+}
 
 const Page = () => (
   <div>

@@ -64,7 +64,7 @@ const Page = () => (
       following Box using the space defined in the theme. Hint you can use the
       props <code>p</code> or <code>padding</code>
     </Text>
-    <Box>Hello padding</Box>
+    <Box padding={7}>Hello padding</Box>
     <Typography variant="h3">Task 2</Typography>
     <Text>
       Go to <code>src/pages/Spacing.js</code> and a padding of 4rem on the left
@@ -72,7 +72,7 @@ const Page = () => (
       space defined in the theme. Hint you need to use the props <code>px</code>{" "}
       and <code>py</code>
     </Text>
-    <Box>Hello padding</Box>
+    <Box padding={0,7}>Hello padding</Box>
     <Typography variant="h3">Task 3</Typography>
     <Text>
       Go to <code>src/pages/Spacing.js</code> and a padding of 4rem on the left
@@ -80,7 +80,7 @@ const Page = () => (
       space defined in the theme. Hint you need to use the props <code>px</code>{" "}
       , <code>pb</code>, and <code>pt</code>
     </Text>
-    <Box>Hello padding</Box>
+    <Box padding={0, 4, 3, 4}>Hello padding</Box>
   </div>
 );
 
